@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "flash_cards.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "flash_cards.py"
+      }
+    ]
+  }
